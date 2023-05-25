@@ -1,7 +1,6 @@
-[submodule "backend"]
-       path = backend
-       url = https://github.com/social-network-ya-practicum/backend
-       
 [submodule "frontend"]
-       path = frontend
-       url = https://github.com/social-network-ya-practicum/frontend
+	path = frontend
+	url = https://github.com/social-network-ya-practicum/frontend
+[submodule "backend"]
+	path = backend
+	url = https://github.com/social-network-ya-practicum/backend
