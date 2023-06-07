@@ -1,6 +1,9 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/social-network-ya-practicum/frontend.git
+    branch = develop
+
 [submodule "backend"]
 	path = backend
 	url = https://github.com/social-network-ya-practicum/backend.git
+    branch = main
