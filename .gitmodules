@@ -3,4 +3,4 @@
 	url = https://github.com/social-network-ya-practicum/frontend
 [submodule "backend"]
 	path = backend
-	url = https://github.com/social-network-ya-practicum/backend.git
+	url = https://github.com/social-network-ya-practicum/backend.git@HEAD
