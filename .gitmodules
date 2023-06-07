@@ -1,6 +1,6 @@
 [submodule "frontend"]
 	path = frontend
-	url = https://github.com/social-network-ya-practicum/frontend
+	url = https://github.com/social-network-ya-practicum/frontend.git
 [submodule "backend"]
 	path = backend
-	url = https://github.com/social-network-ya-practicum/backend.git@HEAD
+	url = https://github.com/social-network-ya-practicum/backend.git
