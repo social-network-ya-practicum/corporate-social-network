@@ -1,11 +1,11 @@
 [submodule "frontend"]
-	path = frontend
-	url = https://github.com/social-network-ya-practicum/frontend.git
+    path = frontend
+    url = https://github.com/social-network-ya-practicum/frontend.git
     branch = develop
     update = merge
 
 [submodule "backend"]
-	path = backend
-	url = https://github.com/social-network-ya-practicum/backend.git
+    path = backend
+    url = https://github.com/social-network-ya-practicum/backend.git
     branch = main
     update = merge
