@@ -16,6 +16,8 @@ jobs:
         run: |
           git submodule update --init --recursive
           git submodule foreach git pull origin main
+          git config --global user.email "fmelodic@gmail.com"
+          git config --global user.name "Andrey Bychkov"
           git add .
           git commit -m "Update submodules"
 
