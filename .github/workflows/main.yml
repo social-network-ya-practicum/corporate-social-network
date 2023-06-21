@@ -11,13 +11,16 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        
+      - name: Configure Git
+        run: |
+          git config --local user.email "fmelodic@gmail.com"
+          git config --local user.name "Andrey Bychkov"
 
       - name: Update Submodules
         run: |
           git submodule update --init --recursive
           git submodule foreach git pull origin main
-          git config --global user.email "fmelodic@gmail.com"
-          git config --global user.name "Andrey Bychkov"
           git add .
           git commit -m "Update submodules"
 
