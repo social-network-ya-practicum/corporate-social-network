@@ -14,21 +14,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         
-      - name: Configure Git
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-
       - name: Update Submodules
         run: |
           git submodule update --init --recursive
           git submodule foreach git pull origin main
+          git config --local user.email "fmelodic@gmail.com"
+          git config --local user.name "AndreyVnk"
           git add .
           git commit -m "Update submodules"
 
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.VNK_TOKEN }}
-          branch: ${{ github.ref }}
-          force_with_lease: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
